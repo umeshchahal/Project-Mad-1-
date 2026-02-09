@@ -1,0 +1,15 @@
+STEP 1: Remove GitHub credentials from Windows (VERY IMPORTANT)
+
+Open Control Panel
+
+Go to Credential Manager
+
+Click Windows Credentials
+
+Find anything named:
+
+github.com
+
+git:https://github.com
+
+❌ Delete ALL of them
