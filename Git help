@@ -1,0 +1,96 @@
+STEP 1: Remove GitHub credentials from Windows (VERY IMPORTANT)
+
+Open Control Panel
+Go to Credential Manager
+Click Windows Credentials
+Find anything named:
+github.com
+git:https://github.com
+❌ Delete ALL of them
+
+
+🟢 WAY 1: VS CODE + GIT TERMINAL (BEST & MUST-KNOW)
+🔹 STEP 1: Open project folder in VS Code
+
+IMPORTANT
+Open the root folder, not individual files.
+
+placement_portal/
+├── app.py
+├── templates/
+├── static/
+
+
+🔹 STEP 2: Initialize Git (ONLY ONCE)
+
+In terminal:
+git init
+
+This creates:
+.git/   ← hidden folder
+
+
+⚠️ Without .git, nothing will track.
+🔹 STEP 3: Check file status
+git status
+
+
+You’ll see:
+Untracked files:
+  templates/
+  static/
+This means Git sees them but is not tracking yet.
+
+🔹 STEP 4: Add files to Git (TRACK THEM)
+
+Add everything:
+git add .
+OR specific folder:
+git add templates static
+Check again:
+git status
+Now files are staged.
+
+🔹 STEP 5: Commit (SAVE SNAPSHOT)
+git commit -m "Initial project structure"
+
+
+📌 Commit = permanent save point.
+
+🔹 STEP 6: Connect to GitHub (Remote)
+
+Create empty repository on GitHub.
+
+Then:
+
+git branch -M main
+git remote add origin https://github.com/username/repo-name.git
+Verify:
+git remote -v
+
+🔹 STEP 7: Push to GitHub
+git push -u origin main
+
+
+🎉 CODE IS NOW ON GITHUB
+
+🔄 HOW CODE UPDATES WORK (VERY IMPORTANT)
+
+Every time you change code:
+
+git status
+git add .
+git commit -m "what you changed"
+git push
+
+
+👉 If you skip any step → code won’t update
+
+git add .gitignore
+git commit -m "Remove venv and add gitignore"
+git push
+
+pip freeze > requirements.txt
+git add requirements.txt
+git commit -m "Add requirements"
+git push
