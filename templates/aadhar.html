@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>aadhar card html </title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="main">
+        <div id="canvas">
+            <div id="form-body" style="height: 600px;width: 500px; margin-top: 120px;">
+                <h1>add aadhar card detail </h1>
+                <form action="" , method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="Input1" class="form-label">Full Name </label>
+                        <input type="text" class="form-control" id="Input1" placeholder="umesh1234" name="fullname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Input2" class="form-label">Gender </label>
+                        <select class="form-select" aria-label="Default select example" id="Input2" name="gender">
+
+                            <option value="male">Male </option>
+                            <option value="female">Female </option>
+                            <option value="other">other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Input3" class="form-label">DOB</label>
+                        <input type="date" class="form-control" id="Input3" name="dob">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="imageUpload">Choose an image to upload:</label>
+                        <input type="file" class="form-control" id="imageUpload" name="image" accept="image/*">
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-primary" value="Request a card"></button>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

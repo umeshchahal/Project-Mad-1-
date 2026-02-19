@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Update status html </title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="main">
+        <div id="canvas">
+            <div id="form-body" style="height: 555px;width: 560px;margin-top: 125 px;">
+                <h1> Card Request Detail </h1>
+                <label for="name" class="form-label">Full Name </label>
+                <input id="name" class="form-control" type="text" value="Umesh" aria-label="readonly input example" readonly>
+                <label for="card" class="form-label">Type of Card  </label>
+                <input id="card"class="form-control" type="text" value="Aadhar" aria-label="readonly input example" readonly>
+                <label for="d1" class="form-label">Detail 1 </label>
+                <input id="d1" class="form-control" type="text" value="detail 1" aria-label="readonly input example" readonly>
+
+                <label for="d2" class="form-label">Detail 2 </label>
+                <input id="d2"  class="form-control" type="text" value="detail 2" aria-label="readonly input example" readonly>
+
+                <form action="" , method="post">
+                    <div class="mb-3">
+                        <label for="Input1" class="form-label">Update status </label>
+                        <select class="form-select" aria-label="Default select example" id="Input1" name="card">
+
+                            <option value="aadhar">Under Verification </option>
+                            <option value="pan">Verification </option>
+
+                        </select>
+                    </div>
+
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-primary" value="update status"></button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>
